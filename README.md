@@ -8,7 +8,7 @@ Store scripts repository.
 * `disk-usage` -> show largest folders (todo)
 * `clean-tmp` -> clear temp/cache files (todo)
 * `backup-home` -> backup important dirs (todo)
-* `free-memory` -> free RAM / show memory (todo)
+* [`free-memory`](./markdown/free-memory.md) -> free RAM / show memory
 
 ## Workflow scripts
 
@@ -22,7 +22,7 @@ Store scripts repository.
 
 * `mkcd` -> create + cd into directory (todo)
 * `extract` -> extract any archive (todo)
-* [`serve-here`](./markdown/serve-here.md) -> local static server 
+* [`serve-here`](./markdown/serve-here.md) -> local static server
 * `json-pretty` -> format JSON (todo)
 * `slugify` -> convert text to URL slug (todo)
 
