@@ -22,7 +22,7 @@ Store scripts repository.
 
 * `mkcd` -> create + cd into directory (todo)
 * `extract` -> extract any archive (todo)
-* `serve-here` -> local static server (todo)
+* [`serve-here`](./markdown/serve-here.md) -> local static server 
 * `json-pretty` -> format JSON (todo)
 * `slugify` -> convert text to URL slug (todo)
 
@@ -44,7 +44,7 @@ Store scripts repository.
 
 ## Networking & API helpers scripts
 
-* [`ping-hosts`](./markdown/ping-hosts.md) -> check availability 
+* [`ping-hosts`](./markdown/ping-hosts.md) -> check availability
 * `download-assets` (todo)
 * `api-health-check` (todo)
 * `fetch-weather` (todo)
@@ -58,7 +58,7 @@ dot-scripts/
 ├── node/ -> `.js`
 ├── python/ -> `.py`
 ├── bin/ -> exec
-├── markdown/ -> documenation
+├── markdown/ -> documentation
 ├── README.md
 ```
 
