@@ -36,7 +36,7 @@ Store scripts repository.
 
 ## Data & file manipulation scripts
 
-* `rename-files` -> batch rename (todo)
+* [`rename-files`](./markdown/rename-files.md) -> batch rename
 * `resize-images` -> image processing (todo)
 * `csv-to-json` (todo)
 * `json-to-yaml` (todo)
