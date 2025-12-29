@@ -44,7 +44,7 @@ Store scripts repository.
 
 ## Networking & API helpers scripts
 
-* [`ping-hosts`](./node/ping-hosts.js) -> check availability 
+* [`ping-hosts`](./markdown/ping-hosts.md) -> check availability 
 * `download-assets` (todo)
 * `api-health-check` (todo)
 * `fetch-weather` (todo)
@@ -57,7 +57,8 @@ dot-scripts/
 ├── bash/ -> `.sh`
 ├── node/ -> `.js`
 ├── python/ -> `.py`
-├── bin/
+├── bin/ -> exec
+├── markdown/ -> documenation
 ├── README.md
 ```
 
