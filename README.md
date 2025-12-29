@@ -44,7 +44,7 @@ Store scripts repository.
 
 ## Networking & API helpers scripts
 
-* `ping-hosts` -> check availability (todo)
+* [`ping-hosts`](./node/ping-hosts.js) -> check availability 
 * `download-assets` (todo)
 * `api-health-check` (todo)
 * `fetch-weather` (todo)
