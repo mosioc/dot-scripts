@@ -50,6 +50,10 @@ Store scripts repository.
 * `fetch-weather` (todo)
 * `github-backup` (todo)
 
+## Scraping
+
+* [`web-to-markdown`](./markdown/web-to-markdown.md) -> fetch webpages and convert to markdown
+
 ## Folder Tree
 
 ```txt
