@@ -266,15 +266,15 @@ function createServer(rootDir, port) {
         // Try to serve index.html
         const indexPath = path.join(filePath, 'index.html');
         if (fs.existsSync(indexPath)) {
-          fs.readFile(indexPath, (err, data) => {
-            if (err) {
-              res.writeHead(500, { 'Content-Type': 'text/plain' });
-              res.end('500 Internal Server Error');
-              return;
-            }
-            res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.end(data);
+          const readStream = fs.createReadStream(indexPath);
+
+          readStream.on('error', (err) => {
+            res.writeHead(500, { 'Content-Type': 'text/plain' });
+            res.end('500 Internal Server Error');
           });
+
+          res.writeHead(200, { 'Content-Type': 'text/html' });
+          readStream.pipe(res);
         } else {
           // Generate directory listing
           const html = generateDirectoryListing(filePath, urlPath);
@@ -286,15 +286,15 @@ function createServer(rootDir, port) {
         const ext = path.extname(filePath).toLowerCase();
         const mimeType = MIME_TYPES[ext] || 'application/octet-stream';
 
-        fs.readFile(filePath, (err, data) => {
-          if (err) {
-            res.writeHead(500, { 'Content-Type': 'text/plain' });
-            res.end('500 Internal Server Error');
-            return;
-          }
-          res.writeHead(200, { 'Content-Type': mimeType });
-          res.end(data);
+        const readStream = fs.createReadStream(filePath);
+
+        readStream.on('error', (err) => {
+          res.writeHead(500, { 'Content-Type': 'text/plain' });
+          res.end('500 Internal Server Error');
         });
+
+        res.writeHead(200, { 'Content-Type': mimeType });
+        readStream.pipe(res);
       }
     });
   });
