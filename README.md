@@ -37,6 +37,7 @@ Store scripts repository.
 ## Data & file manipulation scripts
 
 * [`rename-files`](./markdown/rename-files.md) -> batch rename
+* [`md-headings`](./bash/md-headings.sh) -> extract headings from markdown files
 * `resize-images` -> image processing (todo)
 * `csv-to-json` (todo)
 * `json-to-yaml` (todo)

@@ -1,0 +1,2 @@
+#!/bin/sh
+bash "$HOME/dot-scripts/bash/md-headings.sh" "$@"
